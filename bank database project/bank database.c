@@ -1,3 +1,15 @@
+
+/**
+ * @file bank database.c
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2020-11-19
+ * 
+ * @copyright Copyright (c) 2020
+ * 
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -5,6 +17,10 @@
 extern int counter ;
 extern customer_t arr[5] ;
 
+/**
+ * @brief Create a new customer object
+ * 
+ */
 void create_new_customer(void)
 {
     customer_t new_customer ;
@@ -33,6 +49,11 @@ void create_new_customer(void)
     counter++ ;
 }
 
+/**
+ * @brief 
+ * 
+ * @param id 
+ */
 void  edit_customer(int id )
 {
     int i ;
@@ -60,6 +81,11 @@ void  edit_customer(int id )
     }
 
 }
+/**
+ * @brief 
+ * 
+ * @param id 
+ */
 
   void  print_customer_data(int id)
     { int i ;
